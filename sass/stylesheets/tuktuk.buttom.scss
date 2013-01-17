@@ -1,0 +1,77 @@
+@import "_vendor";
+@import "_theme";
+$h :32px; $i :52px; $j :28px;  $k :22px;
+.button, button{
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	font-family: inherit;
+	font-size: 15px;
+	height: $h;
+	line-height: ($h - 2);
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+
+	&:disabled, &.disabled{
+	background: rgba(255,255,255,0.2);
+    color: #999 !important;
+	}
+	&.icon{
+		padding: 1px 9px;
+	}
+	&:not(.icon){
+		padding: 0 16px;
+    	& .icon{
+    		margin-right: padding / 2;
+      		display: inline-block;
+    	}
+	}
+
+	&.anchor{
+		width: 100%;
+		&:not(.icon) .icon{
+			float: left;
+			margin-left: 8px;
+        }
+	}
+    &.large{
+    		height: $i;
+    		font-size: 22px;
+    		line-height: $i;
+    		&.icon{
+    			padding: 0 16px;
+    		}
+    		&:not(.icon){
+    			padding: 0 24px;
+    		}
+    }
+    &.small{
+    	height: $j;
+    	font-size: 13px;
+    	line-height: ($j - 2);
+    	&.icon{
+    	padding: 1px 8px;
+    	}
+    	&:not(.icon){
+    		padding: 0 12px;
+    		& > .icon{
+    			height: 17px;
+      			}
+    		}
+    }
+  &.tiny{
+  	height: $k;
+    font-size: 11px;
+    line-height: ($k - 2);
+    &.icon{
+    	padding: 0 6px;
+    }
+    &:not(.icon){
+    	padding: 0 10px;
+    	& > .icon{
+      	height: 12px;
+      }
+    }
+  }
+}
