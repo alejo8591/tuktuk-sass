@@ -1,6 +1,7 @@
-# tuktuk 0.3
+# tuktuk-sass 0.3 (at the same time retains the liberation tuktuk)
 ### Simple (but powerful) RWD Framework
 
+#Important information from the original version released
 ## This isn't another frontend framework... is a way to create sites and extend them with your own style.?
 More info in http://tuktuk.tapquo.com
 
