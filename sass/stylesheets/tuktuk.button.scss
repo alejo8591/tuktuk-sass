@@ -1,5 +1,5 @@
 @import "_vendor";
-@import "_theme";
+@import "_constants";
 $h :32px; $i :52px; $j :28px;  $k :22px;
 .button, button{
 	border: none;
@@ -23,7 +23,7 @@ $h :32px; $i :52px; $j :28px;  $k :22px;
 	&:not(.icon){
 		padding: 0 16px;
     	& .icon{
-    		margin-right: padding / 2;
+    		margin-right: $padding/2;
       		display: inline-block;
     	}
 	}

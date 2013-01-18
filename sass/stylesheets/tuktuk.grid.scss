@@ -1,0 +1,246 @@
+@import "_vendor";
+// loading layout variables and @media queries
+@import "_constants";
+/* ========================= VISIBILITY ========================= */
+// show options
+@mixin values_show($_values, $width:960px){
+  // default case 960px
+  @if $width == $normal{
+    @if $_values == phone{display: none !important;}
+    @else if $_values == tablet{display: none !important;}
+    @else {display: inherit !important;}}
+  @else if $width == $media_one{
+    @if $_values == phone{display: none !important;}
+    @else if $_values == tablet{display: none !important;}
+    @else {display: inherit;}}
+  // between 768px and 959px
+  @else if $width == $media_two{
+    @if $_values == phone{display: none !important;}
+    @else if $_values == tablet{display: inherit !important;}
+    @else {display: none !important;}}
+  // less than or equal 767px
+  @else if $width == $media_three{
+    @if $_values == phone{display: inherit !important;}
+    @else if $_values == tablet{display: none !important;}
+    @else {display: none !important;}}
+  // between 480px and 767px
+  @else{
+    @if $_values == phone{display: inherit !important;}
+    @else if $_values == tablet{display: none !important;}
+    @else {display: none !important;}}}
+// hide options
+@mixin values_hide($_values, $width:$normal){
+  // default case 960px
+  @if $width == $normal{
+    @if $_values == phone{display: inherit !important;}
+    @else if $_values == tablet{display: inherit !important;}
+    @else {display: none !important;}}
+  // more of 1200px
+  @else if $width == $media_one{
+    @if $_values == phone{display: inherit !important;}
+    @else if $_values == tablet{display: none !important;}
+    @else {display: inherit !important;}}
+  // between 768px and 959px
+  @else if $width == $media_two{
+    @if $_values == phone{display: inherit !important;}
+    @else if $_values == tablet{display: none !important;}
+    @else {display: inherit !important;}}
+  // less than or equal 767px
+  @else if $width == $media_three{
+    @if $_values == phone{display: none !important;}
+    @else if $_values == tablet{display: inherit !important;}
+    @else {display: inherit !important;}}
+  // between 480px and 767px
+  @else{
+    @if $_values == phone{display: none !important;}
+    @else if $_values == tablet{display: inherit !important;}
+    @else {display: inherit !important;}}}
+/* ========================= ROW ========================= */
+@mixin row($margin:0, $width:$normal){
+  .row{
+    // default case 960px
+    @if $width == $normal{
+      margin: $margin auto;
+      width: $normal;
+      overflow: hidden;
+      & .row{
+        margin: $margin -16px $margin -16px;
+        width: auto;
+        display: inline-block;}}
+    // more of 1200px
+    @else if $width == $media_one{
+        width: $width;
+        & .row{margin: $margin -20px $margin -20px;}}
+    // between 768px and 959px
+    @else if $width == $media_two{
+      width: $width;
+      & .row{margin: $margin -14px $margin -14px;}}
+    // less than or equal 767px
+    @else if $width == $media_three{
+      width: 300px;
+      &.row{margin: $margin;}}
+    // between 480px and 767px
+    @else {
+      margin: $margin auto;
+      width: $width;
+      overflow: hidden;
+      &.row{
+        margin: $margin;
+        width: auto;
+        display: inline-block;}}}}
+/* ========================= COLUMN ========================= */
+@mixin class_column($width:$normal){
+  // default case 960px
+  @if $width == $normal{
+    [class^="column_"], [class*=" column_"]{
+      margin: 0 16px 0 16px;
+      overflow: hidden;
+      float: left;
+      display: inline;}}
+  // more of 1200px
+  @else if $width == $media_one{[class^="column_"], [class*=" column_"]{margin: 0 20px 0 20px;}}
+  // between 768px and 959px
+  @else if $width == $media_two{[class^="column_"], [class*=" column_"]{margin: 0 14px 0 14px;}}
+  // less than or equal 767px
+  @else if $width == $media_three{
+    [class^="column_"],[class*=" column_"]{
+      width: $media_three;
+      margin: 10px 0 0 0;}}
+  // between 480px and 767px
+  @else {
+      [class^="column_"], [class*=" column_"]{
+        margin: 10px 0 0 0;
+        width: $media_four;}}}
+@mixin values_column($_values, $width:$normal){
+  // default case 960px
+  @if $width == $normal{
+    @if $_values      == _1{width: 48px;}     
+    @else if $_values == _2{width: 128px;} 
+    @else if $_values == _3{width: 208px;} 
+    @else if $_values == _4{width: 288px;} 
+    @else if $_values == _5{width: 368px;}
+    @else if $_values == _6{width: 448px;} 
+    @else if $_values == _7{width: 528px;} 
+    @else if $_values == _8{width: 608px;}
+    @else if $_values == _9{width: 688px;} 
+    @else if $_values == _10{width: 768px;}
+    @else if $_values == _11{width: 848px;}
+    @else {width: 928px;}}
+  // more of 1200px
+  @else if $width == $media_one{
+    @if $_values     == _1{width: 60px;}     
+    @else if $_values == _2{width: 160px;}
+    @else if $_values == _3{width: 260px;}
+    @else if $_values == _4{width: 360px;}
+    @else if $_values == _5{width: 460px;}
+    @else if $_values == _6{width: 560px;}
+    @else if $_values == _7{width: 660px;}
+    @else if $_values == _8{width: 760px;}
+    @else if $_values == _9{width: 860px;}
+    @else if $_values == _10{width: 960px;}
+    @else if $_values == _11{width: 1060px;}
+    @else {width: 1160px;}}
+  // between 768px and 959px
+  @else if $width == $media_two{
+    @if $_values == _1{width: 36px;}     
+    @else if $_values == _2{width: 100px;}
+    @else if $_values == _3{width: 164px;}
+    @else if $_values == _4{width: 228px;}
+    @else if $_values == _5{width: 292px;}
+    @else if $_values == _6{width: 356px;}
+    @else if $_values == _7{width: 420px;}
+    @else if $_values == _8{width: 484px;}
+    @else if $_values == _9{width: 548px;}
+    @else if $_values == _10{width: 612px;}
+    @else if $_values == _11{width: 676px;}
+  // less than or equal 767px
+  @else {width: 740px;}}}
+/* ========================= OFFSET =========================*/
+//the offset options 
+@mixin values_offset($_values, $width:$normal){
+  // default case 960px
+  @if $width == $normal{
+    @if $_values == _1{margin-left: 96px;}       
+    @else if $_values == _2{margin-left: 176px;}     
+    @else if $_values == _3{margin-left: 256px;}    
+    @else if $_values == _4{margin-left: 336px;}    
+    @else if $_values == _5{margin-left: 416px;}      
+    @else if $_values == _6{margin-left: 496px;}    
+    @else if $_values == _7{margin-left: 576px;}   
+    @else if $_values == _8{margin-left: 656px;}    
+    @else if $_values == _9{margin-left: 736px;}    
+    @else if $_values == _10{margin-left: 816px;} 
+    @else {margin-left: 896px;}}
+  // more of 1200px
+  @else if $width == $media_one{
+    @if $_values == _1{margin-left: 120px;}       
+    @else if $_values == _2{margin-left: 220px;}     
+    @else if $_values == _3{margin-left: 320px;}    
+    @else if $_values == _4{margin-left: 420px;}   
+    @else if $_values == _5{margin-left: 520px;}      
+    @else if $_values == _6{margin-left: 620px;}   
+    @else if $_values == _7{margin-left: 720px;}   
+    @else if $_values == _8{margin-left: 820px;}   
+    @else if $_values == _9{margin-left: 920px;}  
+    @else if $_values == _10{margin-left: 1020px;}   
+    @else {margin-left: 1120px;}}
+  // between 768px and 959px
+  @else if $width == $media_two{
+    @if $_values == _1{margin-left: 78px;}       
+    @else if $_values == _2{margin-left: 142px;}     
+    @else if $_values == _3{margin-left: 206px;}    
+    @else if $_values == _4{margin-left: 270px;}   
+    @else if $_values == _5{margin-left: 334px;}      
+    @else if $_values == _6{margin-left: 398px;}   
+    @else if $_values == _7{margin-left: 462px;}   
+    @else if $_values == _8{margin-left: 526px;}   
+    @else if $_values == _9{margin-left: 590px;}  
+    @else if $_values == _10{margin-left: 654px;}   
+    @else {margin-left: 718px;}}
+  // less than or equal 767px
+  @else{margin-left: 0;}}
+/* ========================= NORMAL ========================= */
+// default case 960px
+@include row(0, $normal);
+@include class_column($normal);
+//iterating on columns
+@each $values in _1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12{.column#{$values}{@include values_column($values, $normal);}}
+//iterating on offset
+@each $values in _1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11{.offset#{$values}{@include values_offset($values, $normal);}}
+@each $values in phone, tablet, screen{
+  .show-#{$values} {@include values_show($values, $normal);}
+	.hide-#{$values} {@include values_hide($values, $normal);}}
+/* ========================= MEDIA QUERY ========================= */
+// more of 1200px
+@media only screen and (min-width: $media_one){
+	@include row(0,$media_one);
+  @include class_column($media_one);
+  @each $values in _1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12{.column#{$values}{@include values_column($values, $media_one);}}
+  @each $values in _1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11{.offset#{$values}{@include values_offset($values, $media_one);}}
+  @each $values in phone, tablet, screen{
+    .show-#{$values}{@include values_show($values, $media_one);}
+    .hide-#{$values}{@include values_hide($values, $media_one);}}}
+// between 768px and 959px
+@media only screen and (min-width: $media_two) and (max-width: 959px){
+  @include row(0,$media_two);
+  @include class_column($media_two);
+  @each $values in _1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12{.column#{$values}{@include values_column($values, $media_two);}}
+  @each $values in _1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11{.offset#{$values}{@include values_offset($values, $media_two);}}
+  @each $values in phone, tablet, screen{
+    .show-#{$values}{@include values_show($values, $media_two)}
+    .hide-#{$values}{@include values_hide($values, $media_two)}}}
+// less than or equal 767px
+@media only screen and (max-width: 767px){
+  @include row(0,$media_three);
+  @include class_column($media_three);
+  @each $values in _1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11{.offset#{$values}{@include values_offset($values, $media_three);}}
+  @each $values in phone, tablet, screen{
+    .show-#{$values}{@include values_show($values, $media_three)}
+    .hide-#{$values}{@include values_hide($values, $media_three)}}}
+// between 480px and 767px    
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  @include row(0,$media_four);
+  @include class_column($media_four);
+  @each $values in phone, tablet, screen{
+    .show-#{$values}{@include values_show($values, $media_four)}
+    .hide-#{$values}{@include values_hide($values, $media_four)}}}

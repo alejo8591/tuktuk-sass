@@ -1,0 +1,50 @@
+@import "_vendor";
+@import "_constants";
+$size: 52px;
+form, .form{
+	& input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea{
+		display: block;
+		font-family: inherit;
+		font-size: 14px;
+		margin: 2px 0 6px 0;
+		height: 32px;
+		padding: 6px;
+		@include transition(all 0.15s linear);
+		width: 100%;
+		&:focus{
+			outline: none !important;
+    	}
+    	&.large{
+    		font-size: 1.2em;
+    		height: $size;
+    		margin: 0px;
+    		padding: 0 20px;
+        }
+  	}
+  	& textarea{
+  		height: 64px;
+    }
+    & label{
+    	font-size: 0.9em;
+    	font-weight: 400;
+	}
+}
+.fieldset, fieldset{
+	& label{
+		display: block;
+		float: left;
+    	padding: 2px 8px;
+    	text-align: right;
+    	width: 25%;
+	}
+
+    & > span{
+    	display: block;
+    	font-size: 0.8em;
+      	font-weight: 300;
+      	color: #666;
+    }
+  	& input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea{
+  		width: 75%;
+  	}
+}
