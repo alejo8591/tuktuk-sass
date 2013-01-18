@@ -1,3 +1,11 @@
+/* ====================== COLORS ====================== */
+/* HEADER */
+/* ASIDE */
+/* ARTICLE */
+/* content */
+/* HEADING */
+/* LIST */
+/* GRID */
 /* line 4, ../../sass/stylesheets/tuktuk.button.scss */
 .button, button {
   border: none;
@@ -26,7 +34,7 @@
 }
 /* line 25, ../../sass/stylesheets/tuktuk.button.scss */
 .button:not(.icon) .icon, button:not(.icon) .icon {
-  margin-right: padding/2;
+  margin-right: 5px;
   display: inline-block;
 }
 /* line 31, ../../sass/stylesheets/tuktuk.button.scss */

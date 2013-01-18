@@ -1,0 +1,99 @@
+/* line 2, ../../sass/stylesheets/tuktuk.layout.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  vertical-align: baseline;
+}
+
+/* line 9, ../../sass/stylesheets/tuktuk.layout.scss */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+}
+/* line 14, ../../sass/stylesheets/tuktuk.layout.scss */
+body * {
+  box-sizing: border-box;
+}
+/* line 16, ../../sass/stylesheets/tuktuk.layout.scss */
+body > header {
+  height: 48px;
+  line-height: 48px;
+  position: relative;
+}
+/* line 20, ../../sass/stylesheets/tuktuk.layout.scss */
+body > header .logo {
+  font-size: 2em;
+  line-height: 48px;
+}
+/* line 24, ../../sass/stylesheets/tuktuk.layout.scss */
+body > header nav {
+  font-size: 0.95em;
+}
+/* line 26, ../../sass/stylesheets/tuktuk.layout.scss */
+body > header nav a {
+  margin: 0 10px;
+}
+/* line 28, ../../sass/stylesheets/tuktuk.layout.scss */
+body > header nav a:last-child {
+  margin-right: 0px;
+}
+/* line 29, ../../sass/stylesheets/tuktuk.layout.scss */
+body > footer {
+  padding: 16px 0;
+}
+/* line 30, ../../sass/stylesheets/tuktuk.layout.scss */
+body > section {
+  background: none;
+}
+/* line 32, ../../sass/stylesheets/tuktuk.layout.scss */
+body > section.padding {
+  padding: 48px 0;
+}
+/* line 33, ../../sass/stylesheets/tuktuk.layout.scss */
+body > section.underline {
+  padding: 0;
+}
+/* line 34, ../../sass/stylesheets/tuktuk.layout.scss */
+body > section.landing {
+  padding: 64px 0;
+}
+/* line 36, ../../sass/stylesheets/tuktuk.layout.scss */
+body > section.landing h1 {
+  font-size: 8em;
+}
+/* line 37, ../../sass/stylesheets/tuktuk.layout.scss */
+body > section.landing h2 {
+  font-size: 4em;
+}
+/* line 38, ../../sass/stylesheets/tuktuk.layout.scss */
+body > section.landing h3 {
+  font-size: 2.8em;
+}
+/* line 39, ../../sass/stylesheets/tuktuk.layout.scss */
+body > section.landing .form {
+  margin-top: 5px;
+}
+/* line 41, ../../sass/stylesheets/tuktuk.layout.scss */
+body > section.landing .form input {
+  width: 65%;
+}
+/* line 42, ../../sass/stylesheets/tuktuk.layout.scss */
+body > section.landing .form .button, body > section.landing .form button {
+  width: 35%;
+}
+/* line 43, ../../sass/stylesheets/tuktuk.layout.scss */
+body a {
+  text-decoration: none;
+  outline: 0;
+}
+/* line 46, ../../sass/stylesheets/tuktuk.layout.scss */
+body a:link {
+  -moz-transition: color 0.2s linear 0s;
+  -webkit-transition: color 0.2s linear 0s;
+  -o-transition: color 0.2s linear 0s;
+  transition: color 0.2s linear 0s;
+}

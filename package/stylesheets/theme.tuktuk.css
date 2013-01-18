@@ -35,7 +35,7 @@ body > section .underline {
 /* line 28, ../../sass/stylesheets/theme.tuktuk.scss */
 body hr {
   border-style: solid;
-  border-color: bck_light;
+  border-color: #f7f7f7;
   margin: 20px 0;
   padding: 0;
 }

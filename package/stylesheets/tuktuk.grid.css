@@ -1,0 +1,651 @@
+/* ====================== COLORS ====================== */
+/* HEADER */
+/* ASIDE */
+/* ARTICLE */
+/* content */
+/* HEADING */
+/* LIST */
+/* GRID */
+/* ========================= VISIBILITY ========================= */
+/* ========================= ROW ========================= */
+/* ========================= COLUMN ========================= */
+/* ========================= OFFSET =========================*/
+/* ========================= NORMAL ========================= */
+/* line 59, ../../sass/stylesheets/tuktuk.grid.scss */
+.row {
+  margin: 0 auto;
+  width: 960px;
+  overflow: hidden;
+}
+/* line 65, ../../sass/stylesheets/tuktuk.grid.scss */
+.row .row {
+  margin: 0 -16px 0 -16px;
+  width: auto;
+  display: inline-block;
+}
+
+/* line 94, ../../sass/stylesheets/tuktuk.grid.scss */
+[class^="column_"], [class*=" column_"] {
+  margin: 0 16px 0 16px;
+  overflow: hidden;
+  float: left;
+  display: inline;
+}
+
+/* line 206, ../../sass/stylesheets/tuktuk.grid.scss */
+.column_1 {
+  width: 48px;
+}
+
+/* line 206, ../../sass/stylesheets/tuktuk.grid.scss */
+.column_2 {
+  width: 128px;
+}
+
+/* line 206, ../../sass/stylesheets/tuktuk.grid.scss */
+.column_3 {
+  width: 208px;
+}
+
+/* line 206, ../../sass/stylesheets/tuktuk.grid.scss */
+.column_4 {
+  width: 288px;
+}
+
+/* line 206, ../../sass/stylesheets/tuktuk.grid.scss */
+.column_5 {
+  width: 368px;
+}
+
+/* line 206, ../../sass/stylesheets/tuktuk.grid.scss */
+.column_6 {
+  width: 448px;
+}
+
+/* line 206, ../../sass/stylesheets/tuktuk.grid.scss */
+.column_7 {
+  width: 528px;
+}
+
+/* line 206, ../../sass/stylesheets/tuktuk.grid.scss */
+.column_8 {
+  width: 608px;
+}
+
+/* line 206, ../../sass/stylesheets/tuktuk.grid.scss */
+.column_9 {
+  width: 688px;
+}
+
+/* line 206, ../../sass/stylesheets/tuktuk.grid.scss */
+.column_10 {
+  width: 768px;
+}
+
+/* line 206, ../../sass/stylesheets/tuktuk.grid.scss */
+.column_11 {
+  width: 848px;
+}
+
+/* line 206, ../../sass/stylesheets/tuktuk.grid.scss */
+.column_12 {
+  width: 928px;
+}
+
+/* line 208, ../../sass/stylesheets/tuktuk.grid.scss */
+.offset_1 {
+  margin-left: 96px;
+}
+
+/* line 208, ../../sass/stylesheets/tuktuk.grid.scss */
+.offset_2 {
+  margin-left: 176px;
+}
+
+/* line 208, ../../sass/stylesheets/tuktuk.grid.scss */
+.offset_3 {
+  margin-left: 256px;
+}
+
+/* line 208, ../../sass/stylesheets/tuktuk.grid.scss */
+.offset_4 {
+  margin-left: 336px;
+}
+
+/* line 208, ../../sass/stylesheets/tuktuk.grid.scss */
+.offset_5 {
+  margin-left: 416px;
+}
+
+/* line 208, ../../sass/stylesheets/tuktuk.grid.scss */
+.offset_6 {
+  margin-left: 496px;
+}
+
+/* line 208, ../../sass/stylesheets/tuktuk.grid.scss */
+.offset_7 {
+  margin-left: 576px;
+}
+
+/* line 208, ../../sass/stylesheets/tuktuk.grid.scss */
+.offset_8 {
+  margin-left: 656px;
+}
+
+/* line 208, ../../sass/stylesheets/tuktuk.grid.scss */
+.offset_9 {
+  margin-left: 736px;
+}
+
+/* line 208, ../../sass/stylesheets/tuktuk.grid.scss */
+.offset_10 {
+  margin-left: 816px;
+}
+
+/* line 208, ../../sass/stylesheets/tuktuk.grid.scss */
+.offset_11 {
+  margin-left: 896px;
+}
+
+/* line 210, ../../sass/stylesheets/tuktuk.grid.scss */
+.show-phone {
+  display: none !important;
+}
+
+/* line 211, ../../sass/stylesheets/tuktuk.grid.scss */
+.hide-phone {
+  display: inherit !important;
+}
+
+/* line 210, ../../sass/stylesheets/tuktuk.grid.scss */
+.show-tablet {
+  display: none !important;
+}
+
+/* line 211, ../../sass/stylesheets/tuktuk.grid.scss */
+.hide-tablet {
+  display: inherit !important;
+}
+
+/* line 210, ../../sass/stylesheets/tuktuk.grid.scss */
+.show-screen {
+  display: inherit !important;
+}
+
+/* line 211, ../../sass/stylesheets/tuktuk.grid.scss */
+.hide-screen {
+  display: none !important;
+}
+
+/* ========================= MEDIA QUERY ========================= */
+@media only screen and (min-width: 1200px) {
+  /* line 59, ../../sass/stylesheets/tuktuk.grid.scss */
+  .row {
+    width: 1200px;
+  }
+  /* line 72, ../../sass/stylesheets/tuktuk.grid.scss */
+  .row .row {
+    margin: 0 -20px 0 -20px;
+  }
+
+  /* line 100, ../../sass/stylesheets/tuktuk.grid.scss */
+  [class^="column_"], [class*=" column_"] {
+    margin: 0 20px 0 20px;
+  }
+
+  /* line 217, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_1 {
+    width: 60px;
+  }
+
+  /* line 217, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_2 {
+    width: 160px;
+  }
+
+  /* line 217, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_3 {
+    width: 260px;
+  }
+
+  /* line 217, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_4 {
+    width: 360px;
+  }
+
+  /* line 217, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_5 {
+    width: 460px;
+  }
+
+  /* line 217, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_6 {
+    width: 560px;
+  }
+
+  /* line 217, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_7 {
+    width: 660px;
+  }
+
+  /* line 217, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_8 {
+    width: 760px;
+  }
+
+  /* line 217, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_9 {
+    width: 860px;
+  }
+
+  /* line 217, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_10 {
+    width: 960px;
+  }
+
+  /* line 217, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_11 {
+    width: 1060px;
+  }
+
+  /* line 217, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_12 {
+    width: 1160px;
+  }
+
+  /* line 218, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_1 {
+    margin-left: 120px;
+  }
+
+  /* line 218, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_2 {
+    margin-left: 220px;
+  }
+
+  /* line 218, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_3 {
+    margin-left: 320px;
+  }
+
+  /* line 218, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_4 {
+    margin-left: 420px;
+  }
+
+  /* line 218, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_5 {
+    margin-left: 520px;
+  }
+
+  /* line 218, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_6 {
+    margin-left: 620px;
+  }
+
+  /* line 218, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_7 {
+    margin-left: 720px;
+  }
+
+  /* line 218, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_8 {
+    margin-left: 820px;
+  }
+
+  /* line 218, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_9 {
+    margin-left: 920px;
+  }
+
+  /* line 218, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_10 {
+    margin-left: 1020px;
+  }
+
+  /* line 218, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_11 {
+    margin-left: 1120px;
+  }
+
+  /* line 220, ../../sass/stylesheets/tuktuk.grid.scss */
+  .show-phone {
+    display: none !important;
+  }
+
+  /* line 221, ../../sass/stylesheets/tuktuk.grid.scss */
+  .hide-phone {
+    display: inherit !important;
+  }
+
+  /* line 220, ../../sass/stylesheets/tuktuk.grid.scss */
+  .show-tablet {
+    display: none !important;
+  }
+
+  /* line 221, ../../sass/stylesheets/tuktuk.grid.scss */
+  .hide-tablet {
+    display: none !important;
+  }
+
+  /* line 220, ../../sass/stylesheets/tuktuk.grid.scss */
+  .show-screen {
+    display: inherit;
+  }
+
+  /* line 221, ../../sass/stylesheets/tuktuk.grid.scss */
+  .hide-screen {
+    display: inherit !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 59, ../../sass/stylesheets/tuktuk.grid.scss */
+  .row {
+    width: 768px;
+  }
+  /* line 76, ../../sass/stylesheets/tuktuk.grid.scss */
+  .row .row {
+    margin: 0 -14px 0 -14px;
+  }
+
+  /* line 102, ../../sass/stylesheets/tuktuk.grid.scss */
+  [class^="column_"], [class*=" column_"] {
+    margin: 0 14px 0 14px;
+  }
+
+  /* line 226, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_1 {
+    width: 36px;
+  }
+
+  /* line 226, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_2 {
+    width: 100px;
+  }
+
+  /* line 226, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_3 {
+    width: 164px;
+  }
+
+  /* line 226, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_4 {
+    width: 228px;
+  }
+
+  /* line 226, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_5 {
+    width: 292px;
+  }
+
+  /* line 226, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_6 {
+    width: 356px;
+  }
+
+  /* line 226, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_7 {
+    width: 420px;
+  }
+
+  /* line 226, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_8 {
+    width: 484px;
+  }
+
+  /* line 226, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_9 {
+    width: 548px;
+  }
+
+  /* line 226, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_10 {
+    width: 612px;
+  }
+
+  /* line 226, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_11 {
+    width: 676px;
+  }
+
+  /* line 226, ../../sass/stylesheets/tuktuk.grid.scss */
+  .column_12 {
+    width: 740px;
+  }
+
+  /* line 227, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_1 {
+    margin-left: 78px;
+  }
+
+  /* line 227, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_2 {
+    margin-left: 142px;
+  }
+
+  /* line 227, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_3 {
+    margin-left: 206px;
+  }
+
+  /* line 227, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_4 {
+    margin-left: 270px;
+  }
+
+  /* line 227, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_5 {
+    margin-left: 334px;
+  }
+
+  /* line 227, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_6 {
+    margin-left: 398px;
+  }
+
+  /* line 227, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_7 {
+    margin-left: 462px;
+  }
+
+  /* line 227, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_8 {
+    margin-left: 526px;
+  }
+
+  /* line 227, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_9 {
+    margin-left: 590px;
+  }
+
+  /* line 227, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_10 {
+    margin-left: 654px;
+  }
+
+  /* line 227, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_11 {
+    margin-left: 718px;
+  }
+
+  /* line 229, ../../sass/stylesheets/tuktuk.grid.scss */
+  .show-phone {
+    display: none !important;
+  }
+
+  /* line 230, ../../sass/stylesheets/tuktuk.grid.scss */
+  .hide-phone {
+    display: inherit !important;
+  }
+
+  /* line 229, ../../sass/stylesheets/tuktuk.grid.scss */
+  .show-tablet {
+    display: inherit !important;
+  }
+
+  /* line 230, ../../sass/stylesheets/tuktuk.grid.scss */
+  .hide-tablet {
+    display: none !important;
+  }
+
+  /* line 229, ../../sass/stylesheets/tuktuk.grid.scss */
+  .show-screen {
+    display: none !important;
+  }
+
+  /* line 230, ../../sass/stylesheets/tuktuk.grid.scss */
+  .hide-screen {
+    display: inherit !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 59, ../../sass/stylesheets/tuktuk.grid.scss */
+  .row {
+    width: 300px;
+  }
+  /* line 80, ../../sass/stylesheets/tuktuk.grid.scss */
+  .row.row {
+    margin: 0;
+  }
+
+  /* line 105, ../../sass/stylesheets/tuktuk.grid.scss */
+  [class^="column_"], [class*=" column_"] {
+    width: 300px;
+    margin: 10px 0 0 0;
+  }
+
+  /* line 235, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_1 {
+    margin-left: 0;
+  }
+
+  /* line 235, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_2 {
+    margin-left: 0;
+  }
+
+  /* line 235, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_3 {
+    margin-left: 0;
+  }
+
+  /* line 235, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_4 {
+    margin-left: 0;
+  }
+
+  /* line 235, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_5 {
+    margin-left: 0;
+  }
+
+  /* line 235, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_6 {
+    margin-left: 0;
+  }
+
+  /* line 235, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_7 {
+    margin-left: 0;
+  }
+
+  /* line 235, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_8 {
+    margin-left: 0;
+  }
+
+  /* line 235, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_9 {
+    margin-left: 0;
+  }
+
+  /* line 235, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_10 {
+    margin-left: 0;
+  }
+
+  /* line 235, ../../sass/stylesheets/tuktuk.grid.scss */
+  .offset_11 {
+    margin-left: 0;
+  }
+
+  /* line 237, ../../sass/stylesheets/tuktuk.grid.scss */
+  .show-phone {
+    display: inherit !important;
+  }
+
+  /* line 238, ../../sass/stylesheets/tuktuk.grid.scss */
+  .hide-phone {
+    display: none !important;
+  }
+
+  /* line 237, ../../sass/stylesheets/tuktuk.grid.scss */
+  .show-tablet {
+    display: none !important;
+  }
+
+  /* line 238, ../../sass/stylesheets/tuktuk.grid.scss */
+  .hide-tablet {
+    display: inherit !important;
+  }
+
+  /* line 237, ../../sass/stylesheets/tuktuk.grid.scss */
+  .show-screen {
+    display: none !important;
+  }
+
+  /* line 238, ../../sass/stylesheets/tuktuk.grid.scss */
+  .hide-screen {
+    display: inherit !important;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 59, ../../sass/stylesheets/tuktuk.grid.scss */
+  .row {
+    margin: 0 auto;
+    width: 456px;
+    overflow: hidden;
+  }
+  /* line 86, ../../sass/stylesheets/tuktuk.grid.scss */
+  .row.row {
+    margin: 0;
+    width: auto;
+    display: inline-block;
+  }
+
+  /* line 110, ../../sass/stylesheets/tuktuk.grid.scss */
+  [class^="column_"], [class*=" column_"] {
+    margin: 10px 0 0 0;
+    width: 456px;
+  }
+
+  /* line 244, ../../sass/stylesheets/tuktuk.grid.scss */
+  .show-phone {
+    display: inherit !important;
+  }
+
+  /* line 245, ../../sass/stylesheets/tuktuk.grid.scss */
+  .hide-phone {
+    display: none !important;
+  }
+
+  /* line 244, ../../sass/stylesheets/tuktuk.grid.scss */
+  .show-tablet {
+    display: none !important;
+  }
+
+  /* line 245, ../../sass/stylesheets/tuktuk.grid.scss */
+  .hide-tablet {
+    display: inherit !important;
+  }
+
+  /* line 244, ../../sass/stylesheets/tuktuk.grid.scss */
+  .show-screen {
+    display: none !important;
+  }
+
+  /* line 245, ../../sass/stylesheets/tuktuk.grid.scss */
+  .hide-screen {
+    display: inherit !important;
+  }
+}
