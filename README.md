@@ -89,7 +89,7 @@ Keep track of development and community news.
 
 * Follow [@html5facil on Twitter](http://twitter.com/htm5facil).
 * Follow [@ninjacodetv on Twitter](http://twitter.com/ninjacodetv).
-* * Follow [@maquetafacil on Twitter](http://twitter.com/maquetafacil).
+* Follow [@maquetafacil on Twitter](http://twitter.com/maquetafacil).
 * Have a question that's not a feature request or bug report? [Ask on the LinkedIn Group.]( http://www.linkedin.com/groups/html5facil-4554208?trk=myg_ugrp_ovr)
 
 
