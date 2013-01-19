@@ -6,66 +6,66 @@
 @mixin values_show($_values, $width:960px){
   // default case 960px
   @if $width == $normal{
-    @if $_values == phone{display: none !important;}
-    @else if $_values == tablet{display: none !important;}
-    @else {display: inherit !important;}}
+    @if       $_values == phone{display: none !important;}
+    @else if  $_values == tablet{display: none !important;}
+    @else     {display: inherit !important;}}
   @else if $width == $media_one{
-    @if $_values == phone{display: none !important;}
-    @else if $_values == tablet{display: none !important;}
-    @else {display: inherit;}}
+    @if       $_values == phone{display: none !important;}
+    @else if  $_values == tablet{display: none !important;}
+    @else     {display: inherit;}}
   // between 768px and 959px
   @else if $width == $media_two{
-    @if $_values == phone{display: none !important;}
-    @else if $_values == tablet{display: inherit !important;}
-    @else {display: none !important;}}
+    @if       $_values == phone{display: none !important;}
+    @else if  $_values == tablet{display: inherit !important;}
+    @else     {display: none !important;}}
   // less than or equal 767px
   @else if $width == $media_three{
-    @if $_values == phone{display: inherit !important;}
-    @else if $_values == tablet{display: none !important;}
-    @else {display: none !important;}}
+    @if       $_values == phone{display: inherit !important;}
+    @else if  $_values == tablet{display: none !important;}
+    @else     {display: none !important;}}
   // between 480px and 767px
   @else{
-    @if $_values == phone{display: inherit !important;}
-    @else if $_values == tablet{display: none !important;}
-    @else {display: none !important;}}}
+    @if       $_values == phone{display: inherit !important;}
+    @else if  $_values == tablet{display: none !important;}
+    @else     {display: none !important;}}}
 // hide options
 @mixin values_hide($_values, $width:$normal){
   // default case 960px
   @if $width == $normal{
-    @if $_values == phone{display: inherit !important;}
-    @else if $_values == tablet{display: inherit !important;}
-    @else {display: none !important;}}
+    @if       $_values == phone{display: inherit !important;}
+    @else if  $_values == tablet{display: inherit !important;}
+    @else     {display: none !important;}}
   // more of 1200px
   @else if $width == $media_one{
-    @if $_values == phone{display: inherit !important;}
-    @else if $_values == tablet{display: none !important;}
-    @else {display: inherit !important;}}
+    @if       $_values == phone{display: inherit !important;}
+    @else if  $_values == tablet{display: none !important;}
+    @else     {display: inherit !important;}}
   // between 768px and 959px
   @else if $width == $media_two{
-    @if $_values == phone{display: inherit !important;}
-    @else if $_values == tablet{display: none !important;}
-    @else {display: inherit !important;}}
+    @if       $_values == phone{display: inherit !important;}
+    @else if  $_values == tablet{display: none !important;}
+    @else     {display: inherit !important;}}
   // less than or equal 767px
   @else if $width == $media_three{
-    @if $_values == phone{display: none !important;}
-    @else if $_values == tablet{display: inherit !important;}
-    @else {display: inherit !important;}}
+    @if       $_values == phone{display: none !important;}
+    @else if  $_values == tablet{display: inherit !important;}
+    @else     {display: inherit !important;}}
   // between 480px and 767px
   @else{
-    @if $_values == phone{display: none !important;}
-    @else if $_values == tablet{display: inherit !important;}
-    @else {display: inherit !important;}}}
+    @if       $_values == phone{display: none !important;}
+    @else if  $_values == tablet{display: inherit !important;}
+    @else     {display: inherit !important;}}}
 /* ========================= ROW ========================= */
 @mixin row($margin:0, $width:$normal){
   .row{
     // default case 960px
     @if $width == $normal{
       margin: $margin auto;
-      width: $normal;
-      overflow: hidden;
+      width:       $normal;
+      overflow:     hidden;
       & .row{
         margin: $margin -16px $margin -16px;
-        width: auto;
+        width:   auto;
         display: inline-block;}}
     // more of 1200px
     @else if $width == $media_one{

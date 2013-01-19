@@ -1,74 +1,74 @@
 /* ==== Screen Bigger than 960px ==== */
 @media only screen and (min-width: 1200px) {
-  /* line 3, ../../sass/stylesheets/tuktuk.media.scss */
+  /* line 2, ../../sass/stylesheets/tuktuk.media.scss */
   header {
     height: auto;
   }
 }
 /* ==== Screen 960px ==== */
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
-  /* line 6, ../../sass/stylesheets/tuktuk.media.scss */
+  /* line 4, ../../sass/stylesheets/tuktuk.media.scss */
   header {
     height: auto;
   }
 }
 /* ==== Tablet (Smaller than 959px) ==== */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 9, ../../sass/stylesheets/tuktuk.media.scss */
+  /* line 6, ../../sass/stylesheets/tuktuk.media.scss */
   header {
     height: auto;
   }
 }
 /* ==== Phone (landscape 420px) ==== */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 12, ../../sass/stylesheets/tuktuk.media.scss */
+  /* line 8, ../../sass/stylesheets/tuktuk.media.scss */
   header {
     height: auto !important;
   }
 }
 /* ==== Phone (portrait 300px) ==== */
 @media only screen and (max-width: 767px) {
-  /* line 15, ../../sass/stylesheets/tuktuk.media.scss */
+  /* line 10, ../../sass/stylesheets/tuktuk.media.scss */
   header {
     height: auto !important;
   }
 }
 /* ==== Any phone ==== */
 @media only screen and (max-width: 767px) {
-  /* line 19, ../../sass/stylesheets/tuktuk.media.scss */
+  /* line 14, ../../sass/stylesheets/tuktuk.media.scss */
   section.landing h1 {
     font-size: 5em !important;
   }
-  /* line 20, ../../sass/stylesheets/tuktuk.media.scss */
+  /* line 15, ../../sass/stylesheets/tuktuk.media.scss */
   section.landing h2 {
     font-size: 2.8em !important;
   }
-  /* line 21, ../../sass/stylesheets/tuktuk.media.scss */
+  /* line 16, ../../sass/stylesheets/tuktuk.media.scss */
   section.landing h3 {
     font-size: 1.8em !important;
   }
 
-  /* line 22, ../../sass/stylesheets/tuktuk.media.scss */
+  /* line 18, ../../sass/stylesheets/tuktuk.media.scss */
   header {
     height: auto !important;
     line-height: 32px;
   }
 
-  /* line 27, ../../sass/stylesheets/tuktuk.media.scss */
+  /* line 22, ../../sass/stylesheets/tuktuk.media.scss */
   nav button, nav .button, nav a {
     text-align: center;
     display: block !important;
     margin: 2px 0px !important;
     line-height: 32px;
   }
-  /* line 33, ../../sass/stylesheets/tuktuk.media.scss */
+  /* line 28, ../../sass/stylesheets/tuktuk.media.scss */
   nav.group a {
     border: none !important;
   }
 }
 /* ==== Retina ==== */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
-  /* line 36, ../../sass/stylesheets/tuktuk.media.scss */
+  /* line 30, ../../sass/stylesheets/tuktuk.media.scss */
   header {
     height: auto;
   }

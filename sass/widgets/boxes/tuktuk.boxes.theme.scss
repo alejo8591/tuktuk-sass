@@ -1,0 +1,85 @@
+@import "./stylesheets/_vendor";
+@import  "./stylesheets/_theme";
+/* ====================== CONSTANTS ====================== */
+$text:                                     #333;
+$aside:                           $bck_lightest;
+$aside_light_header:                     $color;
+$aside_light_anchor:        darken($aside, 15%);
+$aside_dark:                          $bck_dark;
+$aside_dark_header:    darken($aside_dark, 38%);
+$aside_dark_anchor:   lighten($aside_dark, 15%);
+$section:                            $bck_light;
+$dimension:                                16px;
+
+[data-tuktuk=boxes] {
+  /* ====================== ASIDE ====================== */
+  > {
+    aside {
+      &.light {
+        background: $aside;
+        color:    lighten($text, 15%);
+        
+        a:not(.button){color: lighten($text, 25%);}
+
+        hr {background: $aside_light_anchor;}}
+
+      &.dark {
+        background: $aside_dark;
+        color: lighten($aside_dark, 90%);
+        a:not(.button) {color: #fff;}
+
+        hr {background: #444;}}
+
+      a:not(.button) {
+        &:hover, &:active, &.active {color: $color;}}
+
+      > header .avatar {@include border-radius(4px);}
+    }
+    /* ====================== SECTION ====================== */
+    section {
+      background: $section;
+      @include box-shadow(inset 4px 0 0 rgba(0, 0, 0, 0.025));}}
+
+  nav {
+    &[data-filter] > a:not(.button){
+      @include border-radius(2px);
+      color: lighten($text, 40%);
+
+      &:hover, &:active, &.active{
+        color: $text;
+        background: darken($section, 5%);
+        @include box-shadow(0 -1px 0 darken($section, 20%), 0 1px 0 lighten($section, 80%));}}
+    
+    &[data-link] > a > .icon{color: $aside_light_anchor;}
+
+    > a > small{opacity: 0.5;}}}
+/* ====================== HEADER/FOOTER ====================== */
+aside {
+  &.light > header {
+    background-color: $aside_light_header;
+    @include box-shadow(inset 0 1px 0 lighten($aside_light_header, 25%), inset 0 -1px 0 darken($aside_light_header, 20%));
+    color: #fff;
+  }
+  
+  &.dark > header {
+    background: $aside_dark_header;
+    @include box-shadow(inset 0 -1px 0 $aside_dark_anchor);}}
+
+section > header {border-bottom: dotted 1px $aside_light_anchor;}
+
+aside > footer, section > footer {background: rgba(0, 0, 0, 0.1);}
+/* ====================== ARTICLE ====================== */
+aside {
+  &.light {
+    > article {@include box-shadow(inset -1px 0 0 $aside_light_anchor);}
+    /* ====================== MENU ====================== */
+    [data-menu] > a:not(.button) {
+      border-bottom: dotted 1px $aside_light_anchor;
+      &:first-child {
+        border-top:  dotted 1px $aside_light_anchor;}}}
+
+  &.dark [data-menu] > a:not(.button) {
+    border-bottom: dotted 1px $aside_dark_anchor;
+
+    &:first-child {
+      border-top:  dotted 1px $aside_dark_anchor;}}}

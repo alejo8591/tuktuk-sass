@@ -4,24 +4,17 @@
 .flexbox{
 	// display-box()
   @include display-box();
-  &.y{
-  	@include box-orient(vertical);
-  }
+  
+  &.y{@include box-orient(vertical);}
+
   &.x{
   	@include box-orient(horizontal);
-    @include box-pack(justify);
-  }
+    @include box-pack(justify);}
+  
+  & > *{display: block;}
 
-  & > *{
-  	display: block;
-  }
-  & > .box{
-    @include box-flex(0);
-  }
-  & > .box-1{
-    @include box-flex(1);
-  }
-  & > .box-2{
-  	@include box-flex(2);
-  }
-}
+  & > .box{@include box-flex(0);}
+  
+  & > .box-1{@include box-flex(1);}
+  
+  & > .box-2{@include box-flex(2);}}

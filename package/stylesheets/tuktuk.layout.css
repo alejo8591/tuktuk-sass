@@ -92,8 +92,9 @@ body a {
 }
 /* line 46, ../../sass/stylesheets/tuktuk.layout.scss */
 body a:link {
+  -webkit-transition: color 0.2s linear;
+  -webkit-transition-delay: 0s;
   -moz-transition: color 0.2s linear 0s;
-  -webkit-transition: color 0.2s linear 0s;
   -o-transition: color 0.2s linear 0s;
   transition: color 0.2s linear 0s;
 }

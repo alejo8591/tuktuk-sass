@@ -1,0 +1,237 @@
+/* ====================== COLORS ====================== */
+/* HEADER */
+/* ASIDE */
+/* ARTICLE */
+/* content */
+/* HEADING */
+/* LIST */
+/* GRID */
+/* ====================== CONSTANTS ====================== */
+/* line 9, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-box-pack: justify;
+  box-pack: justify;
+  /* ====================== SCAFFOLD ====================== */
+  /* ====================== LIST ====================== */
+  /* ====================== NAVIGATION ====================== */
+  /* ====================== WIDGETS ====================== */
+}
+/* line 17, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] > aside, [data-tuktuk=boxes] > section {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+}
+/* line 21, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] > aside > header, [data-tuktuk=boxes] > section > header, [data-tuktuk=boxes] > aside > footer, [data-tuktuk=boxes] > section > footer {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -ms-box-flex: 0;
+  box-flex: 0;
+  display: block;
+  height: 44px;
+  line-height: 44px;
+  padding: 7px;
+}
+/* line 28, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] > aside > header > *, [data-tuktuk=boxes] > section > header > *, [data-tuktuk=boxes] > aside > footer > *, [data-tuktuk=boxes] > section > footer > * {
+  height: 30px;
+  line-height: 30px;
+}
+/* line 32, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] > aside > article, [data-tuktuk=boxes] > section > article {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+}
+/* line 34, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] > aside {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -ms-box-flex: 0;
+  box-flex: 0;
+  width: 240px;
+  z-index: 1;
+}
+/* line 39, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] > aside.absolute {
+  position: absolute;
+  height: 100%;
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+/* line 45, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] > aside.absolute.active {
+  -webkit-transform: translate3d(0%, 0, 0);
+  -moz-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+/* line 49, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] > section {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  z-index: 0;
+}
+/* line 53, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] ul {
+  list-style: none;
+}
+/* line 55, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] ul.totals {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-box-pack: justify;
+  box-pack: justify;
+  text-align: center;
+}
+/* line 59, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] ul.totals > li {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -ms-box-flex: 0;
+  box-flex: 0;
+}
+/* line 62, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] ul.totals > li > strong {
+  display: block;
+  font-weight: 400px;
+  font-size: 1.75em;
+  line-height: 0.9em;
+}
+/* line 68, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] ul.totals > li > small {
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+/* line 73, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] nav[data-filter] {
+  font-size: 0.8em;
+}
+/* line 75, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] nav[data-filter] > a {
+  margin-right: 7px;
+  padding: 5.6px 9.33333px;
+}
+/* line 78, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] nav[data-filter] > a:last-child {
+  margin-right: 0;
+}
+/* line 81, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] nav[data-menu] > a {
+  display: block;
+  padding: 9.33333px;
+}
+/* line 85, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] nav[data-link] > a {
+  display: block;
+  font-size: 0.8em;
+  line-height: 2em;
+}
+/* line 89, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] nav[data-link] > a > .icon {
+  position: relative;
+  top: 3px;
+  margin-right: 4.66667px;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+/* line 96, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] nav[data-button] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-box-pack: justify;
+  box-pack: justify;
+}
+/* line 99, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] nav[data-button] > * {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -ms-box-flex: 0;
+  box-flex: 0;
+  display: inherit;
+}
+/* line 102, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] nav > a > small {
+  position: relative;
+  margin-left: 4px;
+  bottom: 1px;
+}
+/* line 107, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] .margin {
+  margin: 14px;
+}
+/* line 108, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] .margin_left {
+  margin-left: 14px;
+}
+/* line 109, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] .margin_right {
+  margin-right: 14px;
+}
+/* line 110, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] .margin_top {
+  margin-top: 14px;
+}
+/* line 111, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] .margin_bottom {
+  margin-bottom: 14px;
+}
+/* line 113, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] > aside > header .session > *, [data-tuktuk=boxes] > section > header .session > * {
+  float: left;
+}
+/* line 115, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] > aside > header .session > .avatar, [data-tuktuk=boxes] > section > header .session > .avatar {
+  height: 30px;
+  margin-right: 7px;
+}
+/* line 119, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] > aside > header .session > button, [data-tuktuk=boxes] > section > header .session > button, [data-tuktuk=boxes] > aside > header .session > .button, [data-tuktuk=boxes] > section > header .session > .button {
+  margin-top: 2.8px;
+  float: right;
+}
+/* line 124, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] > aside > article .avatar {
+  height: 212px;
+  width: 212px;
+}
+/* line 128, ../../../sass/widgets/boxes/tuktuk.boxes.scss */
+[data-tuktuk=boxes] > aside hr {
+  border: 0;
+  height: 1px;
+  margin: 0px;
+}

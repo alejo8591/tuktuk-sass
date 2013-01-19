@@ -1,50 +1,50 @@
 /* line 4, ../../sass/stylesheets/tuktuk.flexbox.scss */
 .flexbox {
-  display: -moz-box;
   display: -webkit-box;
+  display: -moz-box;
   display: -ms-box;
   display: box;
 }
-/* line 7, ../../sass/stylesheets/tuktuk.flexbox.scss */
+/* line 8, ../../sass/stylesheets/tuktuk.flexbox.scss */
 .flexbox.y {
-  -moz-box-orient: vertical;
   -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
   -ms-box-orient: vertical;
   box-orient: vertical;
 }
 /* line 10, ../../sass/stylesheets/tuktuk.flexbox.scss */
 .flexbox.x {
-  -moz-box-orient: horizontal;
   -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
   -ms-box-orient: horizontal;
   box-orient: horizontal;
-  -moz-box-pack: justify;
   -webkit-box-pack: justify;
+  -moz-box-pack: justify;
   -ms-box-pack: justify;
   box-pack: justify;
 }
-/* line 15, ../../sass/stylesheets/tuktuk.flexbox.scss */
+/* line 14, ../../sass/stylesheets/tuktuk.flexbox.scss */
 .flexbox > * {
   display: block;
 }
-/* line 18, ../../sass/stylesheets/tuktuk.flexbox.scss */
+/* line 16, ../../sass/stylesheets/tuktuk.flexbox.scss */
 .flexbox > .box {
-  -moz-box-flex: 0;
   -webkit-box-flex: 0;
+  -moz-box-flex: 0;
   -ms-box-flex: 0;
   box-flex: 0;
 }
-/* line 21, ../../sass/stylesheets/tuktuk.flexbox.scss */
+/* line 18, ../../sass/stylesheets/tuktuk.flexbox.scss */
 .flexbox > .box-1 {
-  -moz-box-flex: 1;
   -webkit-box-flex: 1;
+  -moz-box-flex: 1;
   -ms-box-flex: 1;
   box-flex: 1;
 }
-/* line 24, ../../sass/stylesheets/tuktuk.flexbox.scss */
+/* line 20, ../../sass/stylesheets/tuktuk.flexbox.scss */
 .flexbox > .box-2 {
-  -moz-box-flex: 2;
   -webkit-box-flex: 2;
+  -moz-box-flex: 2;
   -ms-box-flex: 2;
   box-flex: 2;
 }

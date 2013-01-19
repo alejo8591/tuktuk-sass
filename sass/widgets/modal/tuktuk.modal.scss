@@ -1,0 +1,119 @@
+@import "./stylesheets/_vendor";
+@import "./stylesheets/_constants";
+$padding:12px;
+$size: 44px;
+$w: 90%;
+
+@mixin modal_values($values){
+  @if $values      == _1{margin-top: 0px !important;}
+  @else if $values == _2{margin-top: 0px !important;}
+  @else if $values == _3{margin-top: 0px !important;}
+  @else if $values == _4{
+    margin-left:    -(288px/2);
+    margin-top: 0px !important;
+    width: 288px;
+  }
+  @else if $values == _5{
+    margin-left: -(368px/ 2);
+    margin-top: 0px !important;
+    width: 368px;
+  }
+  @else if $values == _6{
+    margin-left: -(448px/2);
+    margin-top: 0px !important;
+    width: 448px;
+  }
+  @else if $values == _7{
+    margin-left: -(528px/2);
+    margin-top: 0px !important;
+    width:528px;
+  }
+  @else if $values == _8{
+    margin-left: -(608px/2);
+    margin-top: 0px !important;
+    width: 608px;
+  }
+  @else if $values == _9{
+    margin-left: -(688px/2);
+    margin-top: 0px !important;
+    width: 688px;
+  }
+  @else if $values == _10{
+    margin-left: -(768px/2);
+    margin-top: 0px !important;
+    width: 768px;
+  }
+  @else if $values == _11{ 
+    margin-left: -(848px/2);
+    margin-top: 0px !important;
+    width: 848px;
+  }
+  @else if $values == _12{ 
+    margin-left: -(928px/2);
+    margin-top: 0px !important;
+    width: 928px;
+  }
+}
+[data-tuktuk="modal"]{
+    margin-left: -(288px/2);
+    width: 288px;
+}
+[data-tuktuk="modal"]{
+	position: fixed;
+	top: 0;
+	left: 50%;
+	padding: $padding;
+	background: #f5f5f5;
+	@include border-radius(0 0 1px 1px);
+	@include box-shadow(0 1px 4px #000);
+	@include transition(all 300ms 100ms);
+	@include transform(translateY(-100%));
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1981;
+
+	&.active{
+		@include transform(translateY(0%));
+		opacity: 1;
+		visibility: visible;
+	}
+  // Replace &.[class^="column_"]{margin-top: 0px !important;}
+  @each $values in _1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12{.column#{$values}{@include modal_values($values);}}
+
+  &.side{
+    right:    0px;
+    left:    auto;
+    top:    $size;
+    bottom: $size;
+    height:  auto;
+    margin:     0;
+    @include box-shadow(1px 0 4px #000);
+    @include transform(translateX(100%));
+    &.active{@include transform(translateX(0%));}} 
+
+  & > hr{border: solid 1px #ccc;}
+}
+
+@media only screen and (max-width: 528px){
+  [data-tuktuk="modal"]{
+    left:         5% !important;
+    width:        $w !important;
+    margin-left: 0px !important;}
+}
+
+[data-tuktuk="lock"]{
+  width:     100%;
+  height:    100%;
+  position: fixed;
+  top:          0;
+  bottom:       0;
+  left:         0;
+  background: rgba(0,0,0,0.75);
+  z-index:    1980;
+  visibility: hidden;
+  opacity:      0;
+  @include transition(all 300ms 100ms);
+  &.active{
+    visibility: visible;
+    opacity:          1;}
+}

@@ -1,0 +1,131 @@
+@import "./stylesheets/_vendor";
+@import "./stylesheets/_constants";
+/* ====================== CONSTANTS ====================== */
+$header_height:              44px;
+$aside_width:               240px;
+$dimension:                  14px;
+$h: ($header_height - $dimension);
+
+[data-tuktuk=boxes]{
+  position:        absolute;
+  height:              100%;
+  width:               100%;
+  @include display-box();
+  @include box-pack(justify);
+  /* ====================== SCAFFOLD ====================== */
+  > {
+    aside, section {
+      @include display-box();
+      @include box-orient(vertical);}
+
+    aside > header, section > header, aside > footer, section > footer {
+      @include box-flex(0);
+      display:              block;
+      height:      $header_height;
+      line-height: $header_height;
+      padding:       $dimension/2;
+    }
+    aside > header > *, section > header > *, aside > footer > *, section > footer > * {
+      height:      $h;
+      line-height: $h;
+    }
+    aside > article, section > article {@include box-flex(1);}
+
+    aside {
+      @include box-flex(0);
+      width: $aside_width;
+      z-index:          1;
+
+      &.absolute {
+        position: absolute;
+        height:   100%;
+        @include transition(all 250ms);
+        @include transform(translate3d(-100%, 0, 0));
+       
+        &.active {
+          @include transform(translate3d(0%, 0, 0));
+         }}}
+
+    section {
+      @include box-flex(1);
+      z-index:0;}}
+  /* ====================== LIST ====================== */
+  ul {
+    list-style: none;
+    &.totals {
+      @include display-box();
+      @include box-pack(justify);
+      text-align:         center;
+      > li {
+        @include box-flex(0);
+        > {
+          strong {
+            display:      block;
+            font-weight:  400px;
+            font-size:   1.75em;
+            line-height:  0.9em;
+          }
+          small {
+            text-transform: uppercase;
+            font-size: 0.85em;}}}}}
+  /* ====================== NAVIGATION ====================== */
+  nav {
+    &[data-filter] {
+      font-size: $font-size-tiny;
+      > a {
+        margin-right:             $dimension/2;
+        padding: $dimension/2.5 $dimension/1.5;
+        &:last-child {
+          margin-right: 0;}}}
+
+    &[data-menu] > a {
+      display:          block;
+      padding: $dimension/1.5;
+    }
+    &[data-link] > a {
+      display:             block;
+      font-size: $font-size-tiny;
+      line-height:           2em;
+      > .icon {
+        position: relative;
+        top: 3px;
+        margin-right: $dimension/3;
+        font-size:           1.5em;
+        font-weight:        normal;}}
+
+    &[data-button] {
+      @include display-box();
+      @include box-pack(justify);
+      > * {
+        @include box-flex(0);
+        display: inherit;}}
+    > a > small {
+      position: relative;
+      margin-left:   4px;
+      bottom:        1px;}}
+   /* ====================== WIDGETS ====================== */
+  .margin               {margin: $dimension;}
+  .margin_left     {margin-left: $dimension;}
+  .margin_right   {margin-right: $dimension;}
+  .margin_top       {margin-top: $dimension;}
+  .margin_bottom {margin-bottom: $dimension;}
+  > {
+    aside > header .session > *, section > header .session > * {float: left;}
+
+    aside > header .session > .avatar, section > header .session > .avatar {
+      height: $header_height - $dimension;
+      margin-right:          $dimension/2;
+    }
+    aside > header .session > button, section > header .session > button, aside > header .session > .button, section > header .session > .button {
+      margin-top: $dimension/5;
+      float:             right;
+    }
+    aside{
+      > article .avatar {
+        height: $aside_width - $dimension*2;
+        width:  $aside_width - $dimension*2;
+      }
+      hr{
+        border: 0;
+        height: 1px;
+        margin: 0px;}}}}

@@ -5,12 +5,14 @@
 // ====================== TEXT SHADOW ====================== */
 // support Microsoft IE
 @mixin text-shadow($color, $value1, $value2, $value3) {
-	-moz-text-shadow: $value1 $value2 $value3 $color;
-	-o-text-shadow: $value1 $value2 $value3 $color;
-	text-shadow: $value1 $value2 $value3 $color;
-	-webkit-text-shadow: $value1 $value2 $value3 $color;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color')";
-    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color');
+		-moz-text-shadow: 	$value1 $value2 $value3 $color;
+		  -o-text-shadow:  	$value1 $value2 $value3 $color;
+		     text-shadow: 	$value1 $value2 $value3 $color;
+	 -webkit-text-shadow: 	$value1 $value2 $value3 $color;
+	 		  -ms-filter:   "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color')";
+                  filter:   progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color');
 }
 // ====================== TRANSITIONS ====================== */
 @import "compass/css3/transition";
+// ====================== TRANSFORM ====================== */
+@import "compass/css3/transform";
