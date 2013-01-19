@@ -43,7 +43,7 @@ Compass runs as a local GEM on your system. You can run:
 [For more information in Spanish the following tutorial can help!](http://html5facil.com/tutoriales/sass-para-aplicar-en-proyectos-css-y-html5)
 
 
-### Scout: Basic modification
+### Scout: Basic modification (Optional)
 
 [scout-app](http://mhs.github.com/scout-app/)
 
