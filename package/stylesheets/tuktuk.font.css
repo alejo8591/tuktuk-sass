@@ -86,11 +86,11 @@ h6 {
   text-transform: uppercase;
 }
 /* line 31, ../../sass/stylesheets/tuktuk.font.scss */
-.text .left {
+.text.left {
   text-align: left;
 }
 /* line 32, ../../sass/stylesheets/tuktuk.font.scss */
-.text .right {
+.text.right {
   text-align: right;
 }
 /* line 33, ../../sass/stylesheets/tuktuk.font.scss */
@@ -98,19 +98,19 @@ h6 {
   text-align: center;
 }
 /* line 34, ../../sass/stylesheets/tuktuk.font.scss */
-.text .justify {
+.text.justify {
   text-align: justify;
 }
 /* line 35, ../../sass/stylesheets/tuktuk.font.scss */
-.text .tiny {
+.text.tiny {
   font-size: 0.8em;
 }
 /* line 36, ../../sass/stylesheets/tuktuk.font.scss */
-.text .small {
+.text.small {
   font-size: 0.9em;
 }
 /* line 37, ../../sass/stylesheets/tuktuk.font.scss */
-.text .big {
+.text.big {
   font-size: 1.2em;
 }
 

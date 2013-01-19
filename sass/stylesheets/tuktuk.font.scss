@@ -28,13 +28,13 @@ h6{font-size: 1.0em;}
 	.italic		   {font-style: italic;}
     .underline  {border-bottom: 1px solid;}
     .uppercase {text-transform: uppercase;}  
-    .left         		 {text-align: left;} 
-    .right				{text-align: right;}
+    &.left         		 {text-align: left;} 
+    &.right				{text-align: right;}
     &.center		   {text-align: center;}
-    .justify		  {text-align: justify;}
-    .tiny 	   {font-size: $font-size-tiny;}
-    .small   {font-size: $font-size-small;}
-    .big    	{font-size: $font-size-big;}   
+    &.justify		  {text-align: justify;}
+    &.tiny 	   {font-size: $font-size-tiny;}
+    &.small   {font-size: $font-size-small;}
+    &.big    	{font-size: $font-size-big;}   
 }
 /* ========================= BASIC ELEMENTS ========================= */
 p{
