@@ -14,17 +14,17 @@ form, .form{
 
 		&:focus{outline: none !important;}
 
-    	&.large{
-    		font-size: 1.2em;
-    		height:    $size;
-    		margin:      0px;
-    		padding:  0 20px;}}
+  	&.large{
+  		font-size: 1.2em;
+  		height:    $size;
+  		margin:      0px;
+  		padding:  0 20px;}}
 
-  	& textarea{height: 64px;}
+  & textarea{height: 64px;}
 
-    & label{
-    	font-size: 0.9em;
-    	font-weight: 400;}}
+  & label{
+  	font-size: 0.9em;
+  	font-weight: 400;}}
 
 .fieldset, fieldset{
 	& label{
@@ -32,13 +32,13 @@ form, .form{
 		float:      left;
     padding: 2px 8px;
     text-align:right;
-    width:       25%;}
+    width:       25%;
 
     & > span{
     	display: block;
     	font-size: 0.8em;
       font-weight: 300;
-      color: #666;}
+      color: #666;}}
 
-  	& input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea{
-  		width: 75%;}}
+	& input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], select, textarea{
+		width: 75%;}}

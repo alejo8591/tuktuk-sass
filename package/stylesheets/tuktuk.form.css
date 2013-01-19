@@ -50,7 +50,7 @@ form label, .form label {
   width: 25%;
 }
 /* line 37, ../../sass/stylesheets/tuktuk.form.scss */
-.fieldset > span, fieldset > span {
+.fieldset label > span, fieldset label > span {
   display: block;
   font-size: 0.8em;
   font-weight: 300;

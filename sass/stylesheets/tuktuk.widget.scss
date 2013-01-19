@@ -1,4 +1,5 @@
 @import "_vendor";
+$dimension:20px;
 .scroll {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -16,17 +17,17 @@
 .left                    {float: left;}
 .right                  {float: right;}
 .margin_none               {margin: 0;}
-.margin                 {margin: 20px;}
-.margin_left       {margin-left: 20px;}
-.margin_right     {margin-right: 20px;}
-.margin_top         {margin-top: 20px;}
-.margin_bottom   {margin-bottom: 20px;}
+.margin                 {margin: $dimension;}
+.margin_left       {margin-left: $dimension;}
+.margin_right     {margin-right: $dimension;}
+.margin_top         {margin-top: $dimension;}
+.margin_bottom   {margin-bottom: $dimension;}
 .padding_none             {padding: 0;}
-.padding               {padding: 20px;}
-.padding_left     {padding-left: 20px;}
-.padding_right   {padding-right: 20px;}
-.padding_top       {padding-top: 20px;}
-.padding_bottom {padding-bottom: 20px;}
+.padding               {padding: $dimension;}
+.padding_left     {padding-left: $dimension;}
+.padding_right   {padding-right: $dimension;}
+.padding_top       {padding-top: $dimension;}
+.padding_bottom {padding-bottom: $dimension;}
 .block                {display: block;}
 .inline        {display: inline-block;}
 .none                  {display: none;}
@@ -34,11 +35,12 @@
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
+
   &.responsive {
     width:  100%;
     height: auto;
     &.rounded{@include border-radius(50%);}}}
-/* ================== TAGs ================== */
+/* ================== TAGs =========================== */
 .tag{
   position:        relative;
   padding:          3px 4px;

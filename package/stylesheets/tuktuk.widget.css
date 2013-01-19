@@ -1,4 +1,4 @@
-/* line 2, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 3, ../../sass/stylesheets/tuktuk.widget.scss */
 .scroll {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -6,119 +6,119 @@
   -webkit-box-flex: 1;
   /* BUG (iOS) POSITION: relative childrens */
 }
-/* line 8, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 9, ../../sass/stylesheets/tuktuk.widget.scss */
 .scroll.horizontal {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
 }
-/* line 13, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 14, ../../sass/stylesheets/tuktuk.widget.scss */
 .scroll > * {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
-/* line 15, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 16, ../../sass/stylesheets/tuktuk.widget.scss */
 .clear {
   clear: both;
 }
 
-/* line 16, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 17, ../../sass/stylesheets/tuktuk.widget.scss */
 .left {
   float: left;
 }
 
-/* line 17, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 18, ../../sass/stylesheets/tuktuk.widget.scss */
 .right {
   float: right;
 }
 
-/* line 18, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 19, ../../sass/stylesheets/tuktuk.widget.scss */
 .margin_none {
   margin: 0;
 }
 
-/* line 19, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 20, ../../sass/stylesheets/tuktuk.widget.scss */
 .margin {
   margin: 20px;
 }
 
-/* line 20, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 21, ../../sass/stylesheets/tuktuk.widget.scss */
 .margin_left {
   margin-left: 20px;
 }
 
-/* line 21, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 22, ../../sass/stylesheets/tuktuk.widget.scss */
 .margin_right {
   margin-right: 20px;
 }
 
-/* line 22, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 23, ../../sass/stylesheets/tuktuk.widget.scss */
 .margin_top {
   margin-top: 20px;
 }
 
-/* line 23, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 24, ../../sass/stylesheets/tuktuk.widget.scss */
 .margin_bottom {
   margin-bottom: 20px;
 }
 
-/* line 24, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 25, ../../sass/stylesheets/tuktuk.widget.scss */
 .padding_none {
   padding: 0;
 }
 
-/* line 25, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 26, ../../sass/stylesheets/tuktuk.widget.scss */
 .padding {
   padding: 20px;
 }
 
-/* line 26, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 27, ../../sass/stylesheets/tuktuk.widget.scss */
 .padding_left {
   padding-left: 20px;
 }
 
-/* line 27, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 28, ../../sass/stylesheets/tuktuk.widget.scss */
 .padding_right {
   padding-right: 20px;
 }
 
-/* line 28, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 29, ../../sass/stylesheets/tuktuk.widget.scss */
 .padding_top {
   padding-top: 20px;
 }
 
-/* line 29, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 30, ../../sass/stylesheets/tuktuk.widget.scss */
 .padding_bottom {
   padding-bottom: 20px;
 }
 
-/* line 30, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 31, ../../sass/stylesheets/tuktuk.widget.scss */
 .block {
   display: block;
 }
 
-/* line 31, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 32, ../../sass/stylesheets/tuktuk.widget.scss */
 .inline {
   display: inline-block;
 }
 
-/* line 32, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 33, ../../sass/stylesheets/tuktuk.widget.scss */
 .none {
   display: none;
 }
 
 /* ================== IMAGE & MEDIA ================== */
-/* line 34, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 35, ../../sass/stylesheets/tuktuk.widget.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
-/* line 37, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 39, ../../sass/stylesheets/tuktuk.widget.scss */
 img.responsive {
   width: 100%;
   height: auto;
 }
-/* line 40, ../../sass/stylesheets/tuktuk.widget.scss */
+/* line 42, ../../sass/stylesheets/tuktuk.widget.scss */
 img.responsive.rounded {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -127,8 +127,8 @@ img.responsive.rounded {
   border-radius: 50%;
 }
 
-/* ================== TAGs ================== */
-/* line 42, ../../sass/stylesheets/tuktuk.widget.scss */
+/* ================== TAGs =========================== */
+/* line 44, ../../sass/stylesheets/tuktuk.widget.scss */
 .tag {
   position: relative;
   padding: 3px 4px;

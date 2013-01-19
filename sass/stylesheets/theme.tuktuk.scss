@@ -10,14 +10,15 @@ body{
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:   300;	  
   & > header{
-  		.solid{
-  			background: #111;
-        }
-        & nav a{
-        	color: rgba(255,255,255,0.5);
-          :hover, :active{color: #fff;}}}
+  		.solid{background: #111;}
 
-  & > section .underline{border-bottom: solid #bbb 1px;}
+      & nav a{
+        color: rgba(255,255,255,0.5);
+        &:hover, :active{color: #fff;}}}
+
+  > section{
+    .underline{
+      border-bottom: solid #bbb 1px;}}
       
   & hr{
   	border-style:      solid;
@@ -34,11 +35,12 @@ body{
   		& :hover, & :active, & .active{
         color: #000;
         background: $bck_lightest;
+
         & > .icon{color: #000;}}
 
-        & :last-child{border-right: solid #fff 1px;}}}
+      & :last-child{border-right: solid #fff 1px;}}}
  /* ====================== BACKGROUNDS ====================== */
-  .bck{
+  &.bck{
   	&.lightest {background-color: $bck_lightest;}
     
     &.light       {background-color: $bck_light;}
@@ -89,6 +91,7 @@ body{
     border: 1px solid #ddd;
 
     @include border-radius(3px);
+
     & tr{
       &:nth-child(even) td{background-color: #F9F9F9;}
     }
@@ -108,10 +111,12 @@ body{
     @include box-shadow(inset 0 1px 0 rgba(255,255,255,0.2));
     color:     white;
     font-weight: 400;
+
     &:active{
     	border-color: none;
     	@include box-shadow(inset 0 0 128px rgba(0,0,0,0.25));
     }
+    
     &.secondary{
     	background-color: $color_secondary;
     	color: #666;

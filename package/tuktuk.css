@@ -20,76 +20,76 @@ body {
 body > header .solid {
   background: #111;
 }
-/* line 16, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 15, ../sass/stylesheets/theme.tuktuk.scss */
 body > header nav a {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 18, ../sass/stylesheets/theme.tuktuk.scss */
-body > header nav a :hover, body > header nav a :active {
+/* line 17, ../sass/stylesheets/theme.tuktuk.scss */
+body > header nav a:hover, body > header nav a :active {
   color: #fff;
 }
 /* line 20, ../sass/stylesheets/theme.tuktuk.scss */
 body > section .underline {
   border-bottom: solid #bbb 1px;
 }
-/* line 22, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 23, ../sass/stylesheets/theme.tuktuk.scss */
 body hr {
   border-style: solid;
   border-color: #f7f7f7;
   margin: 20px 0;
   padding: 0;
 }
-/* line 30, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 31, ../sass/stylesheets/theme.tuktuk.scss */
 body nav.group a {
   border-left: solid #ccc 1px;
   color: #888;
 }
-/* line 33, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 34, ../sass/stylesheets/theme.tuktuk.scss */
 body nav.group a > .icon {
   color: #888;
 }
-/* line 34, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 35, ../sass/stylesheets/theme.tuktuk.scss */
 body nav.group a :hover, body nav.group a :active, body nav.group a .active {
   color: #000;
   background: white;
 }
-/* line 37, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 39, ../sass/stylesheets/theme.tuktuk.scss */
 body nav.group a :hover > .icon, body nav.group a :active > .icon, body nav.group a .active > .icon {
   color: #000;
 }
-/* line 39, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 41, ../sass/stylesheets/theme.tuktuk.scss */
 body nav.group a :last-child {
   border-right: solid #fff 1px;
 }
-/* line 42, ../sass/stylesheets/theme.tuktuk.scss */
-body .bck.lightest {
+/* line 44, ../sass/stylesheets/theme.tuktuk.scss */
+body.bck.lightest {
   background-color: white;
 }
-/* line 44, ../sass/stylesheets/theme.tuktuk.scss */
-body .bck.light {
+/* line 46, ../sass/stylesheets/theme.tuktuk.scss */
+body.bck.light {
   background-color: #f7f7f7;
 }
-/* line 46, ../sass/stylesheets/theme.tuktuk.scss */
-body .bck.dark {
+/* line 48, ../sass/stylesheets/theme.tuktuk.scss */
+body.bck.dark {
   background-color: #282828;
 }
-/* line 48, ../sass/stylesheets/theme.tuktuk.scss */
-body .bck.darkest {
+/* line 50, ../sass/stylesheets/theme.tuktuk.scss */
+body.bck.darkest {
   background-color: #181818;
 }
-/* line 50, ../sass/stylesheets/theme.tuktuk.scss */
-body .bck.theme {
+/* line 52, ../sass/stylesheets/theme.tuktuk.scss */
+body.bck.theme {
   background-color: #16a6b6;
 }
-/* line 52, ../sass/stylesheets/theme.tuktuk.scss */
-body .bck.accept {
+/* line 54, ../sass/stylesheets/theme.tuktuk.scss */
+body.bck.accept {
   background-color: #3fb58e;
 }
-/* line 54, ../sass/stylesheets/theme.tuktuk.scss */
-body .bck.cancel {
+/* line 56, ../sass/stylesheets/theme.tuktuk.scss */
+body.bck.cancel {
   background-color: #ee6557;
 }
-/* line 56, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 58, ../sass/stylesheets/theme.tuktuk.scss */
 body .text.shadow {
   -moz-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   -o-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
@@ -98,27 +98,27 @@ body .text.shadow {
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color')";
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color');
 }
-/* line 60, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 62, ../sass/stylesheets/theme.tuktuk.scss */
 body .text.color.accept {
   color: #3fb58e;
 }
-/* line 62, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 64, ../sass/stylesheets/theme.tuktuk.scss */
 body .text.color.cancel {
   color: #ee6557;
 }
-/* line 64, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 66, ../sass/stylesheets/theme.tuktuk.scss */
 body .text.color.secondary {
   color: #bfbfbf;
 }
-/* line 66, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 68, ../sass/stylesheets/theme.tuktuk.scss */
 body .text.color.theme {
   color: #16a6b6;
 }
-/* line 68, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 70, ../sass/stylesheets/theme.tuktuk.scss */
 body .text.color.white {
   color: #fff;
 }
-/* line 71, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 73, ../sass/stylesheets/theme.tuktuk.scss */
 body form input[type="text"], body form input[type="password"], body form input[type="date"], body form input[type="datetime"], body form input[type="email"], body form input[type="number"], body form input[type="search"], body form input[type="tel"], body form input[type="time"], body form input[type="url"], body form select, body form textarea, body .form input[type="text"], body .form input[type="password"], body .form input[type="date"], body .form input[type="datetime"], body .form input[type="email"], body .form input[type="number"], body .form input[type="search"], body .form input[type="tel"], body .form input[type="time"], body .form input[type="url"], body .form select, body .form textarea {
   background-color: white;
   border: 1px solid #ddd;
@@ -127,19 +127,19 @@ body form input[type="text"], body form input[type="password"], body form input[
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.75);
 }
-/* line 76, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 78, ../sass/stylesheets/theme.tuktuk.scss */
 body form input[type="text"].error, body form input[type="text"]:required, body form input[type="password"].error, body form input[type="password"]:required, body form input[type="date"].error, body form input[type="date"]:required, body form input[type="datetime"].error, body form input[type="datetime"]:required, body form input[type="email"].error, body form input[type="email"]:required, body form input[type="number"].error, body form input[type="number"]:required, body form input[type="search"].error, body form input[type="search"]:required, body form input[type="tel"].error, body form input[type="tel"]:required, body form input[type="time"].error, body form input[type="time"]:required, body form input[type="url"].error, body form input[type="url"]:required, body form select.error, body form select:required, body form textarea.error, body form textarea:required, body .form input[type="text"].error, body .form input[type="text"]:required, body .form input[type="password"].error, body .form input[type="password"]:required, body .form input[type="date"].error, body .form input[type="date"]:required, body .form input[type="datetime"].error, body .form input[type="datetime"]:required, body .form input[type="email"].error, body .form input[type="email"]:required, body .form input[type="number"].error, body .form input[type="number"]:required, body .form input[type="search"].error, body .form input[type="search"]:required, body .form input[type="tel"].error, body .form input[type="tel"]:required, body .form input[type="time"].error, body .form input[type="time"]:required, body .form input[type="url"].error, body .form input[type="url"]:required, body .form select.error, body .form select:required, body .form textarea.error, body .form textarea:required {
   background-color: rgba(198, 15, 19, 0.1);
   border-color: #ee6557;
   color: #ee6557;
 }
-/* line 81, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 83, ../sass/stylesheets/theme.tuktuk.scss */
 body form input[type="text"]:focus, body form input[type="password"]:focus, body form input[type="date"]:focus, body form input[type="datetime"]:focus, body form input[type="email"]:focus, body form input[type="number"]:focus, body form input[type="search"]:focus, body form input[type="tel"]:focus, body form input[type="time"]:focus, body form input[type="url"]:focus, body form select:focus, body form textarea:focus, body .form input[type="text"]:focus, body .form input[type="password"]:focus, body .form input[type="date"]:focus, body .form input[type="datetime"]:focus, body .form input[type="email"]:focus, body .form input[type="number"]:focus, body .form input[type="search"]:focus, body .form input[type="tel"]:focus, body .form input[type="time"]:focus, body .form input[type="url"]:focus, body .form select:focus, body .form textarea:focus {
   background: #FAFAFA;
   border-color: #B3B3B3;
   color: rgba(0, 0, 0, 0.75);
 }
-/* line 86, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 88, ../sass/stylesheets/theme.tuktuk.scss */
 body table {
   background: #fff;
   color: #333;
@@ -150,21 +150,21 @@ body table {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 93, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 96, ../sass/stylesheets/theme.tuktuk.scss */
 body table tr:nth-child(even) td {
   background-color: #F9F9F9;
 }
-/* line 95, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 98, ../sass/stylesheets/theme.tuktuk.scss */
 body table th {
   background-color: #eee;
   color: #222;
 }
-/* line 100, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 103, ../sass/stylesheets/theme.tuktuk.scss */
 body table td .highlight {
   background-color: #16a6b6 !important;
   color: #fff;
 }
-/* line 104, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 107, ../sass/stylesheets/theme.tuktuk.scss */
 body .button, body button {
   background-color: #16a6b6;
   border: solid 1px rgba(0, 0, 0, 0.1);
@@ -179,14 +179,14 @@ body .button, body button {
   color: white;
   font-weight: 400;
 }
-/* line 111, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 115, ../sass/stylesheets/theme.tuktuk.scss */
 body .button:active, body button:active {
   border-color: none;
   -webkit-box-shadow: inset 0 0 128px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0 0 128px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 0 128px rgba(0, 0, 0, 0.25);
 }
-/* line 115, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 120, ../sass/stylesheets/theme.tuktuk.scss */
 body .button.secondary, body button.secondary {
   background-color: #bfbfbf;
   color: #666;
@@ -197,28 +197,28 @@ body .button.secondary, body button.secondary {
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color')";
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color');
 }
-/* line 121, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 126, ../sass/stylesheets/theme.tuktuk.scss */
 body .button.accept, body button.accept {
   background-color: #3fb58e;
 }
-/* line 123, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 128, ../sass/stylesheets/theme.tuktuk.scss */
 body .button.cancel, body button.cancel {
   background-color: #ee6557;
 }
-/* line 125, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 130, ../sass/stylesheets/theme.tuktuk.scss */
 body .button.transparent, body button.transparent {
   background: none !important;
 }
-/* line 128, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 133, ../sass/stylesheets/theme.tuktuk.scss */
 body a {
   color: #16a6b6;
   opacity: 0.9;
 }
-/* line 131, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 136, ../sass/stylesheets/theme.tuktuk.scss */
 body a:hover, body a:active {
   opacity: 1.0;
 }
-/* line 133, ../sass/stylesheets/theme.tuktuk.scss */
+/* line 138, ../sass/stylesheets/theme.tuktuk.scss */
 body .tag {
   color: #fff !important;
   border: solid 1px rgba(0, 0, 0, 0.1);
@@ -390,115 +390,115 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   line-height: 1.2em;
 }
-/* line 9, ../sass/stylesheets/tuktuk.font.scss */
+/* line 10, ../sass/stylesheets/tuktuk.font.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
 }
-/* line 10, ../sass/stylesheets/tuktuk.font.scss */
-h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
+/* line 12, ../sass/stylesheets/tuktuk.font.scss */
+h1 .right, h2 .right, h3 .right, h4 .right, h5 .right, h6 .right {
   font-size: 1.0em;
 }
-/* line 11, ../sass/stylesheets/tuktuk.font.scss */
-h1.icon, h2.icon, h3.icon, h4.icon, h5.icon, h6.icon {
+/* line 14, ../sass/stylesheets/tuktuk.font.scss */
+h1 .icon, h2 .icon, h3 .icon, h4 .icon, h5 .icon, h6 .icon {
   font-size: 0.85em;
 }
 
-/* line 13, ../sass/stylesheets/tuktuk.font.scss */
+/* line 16, ../sass/stylesheets/tuktuk.font.scss */
 h1 {
   font-size: 2.6em;
 }
 
-/* line 14, ../sass/stylesheets/tuktuk.font.scss */
+/* line 17, ../sass/stylesheets/tuktuk.font.scss */
 h2 {
   font-size: 2.2em;
 }
 
-/* line 15, ../sass/stylesheets/tuktuk.font.scss */
+/* line 18, ../sass/stylesheets/tuktuk.font.scss */
 h3 {
   font-size: 1.8em;
 }
 
-/* line 16, ../sass/stylesheets/tuktuk.font.scss */
+/* line 19, ../sass/stylesheets/tuktuk.font.scss */
 h4 {
   font-size: 1.6em;
 }
 
-/* line 17, ../sass/stylesheets/tuktuk.font.scss */
+/* line 20, ../sass/stylesheets/tuktuk.font.scss */
 h5 {
   font-size: 1.3em;
 }
 
-/* line 18, ../sass/stylesheets/tuktuk.font.scss */
+/* line 21, ../sass/stylesheets/tuktuk.font.scss */
 h6 {
   font-size: 1.0em;
 }
 
 /* ========================= TEXT ========================= */
-/* line 21, ../sass/stylesheets/tuktuk.font.scss */
-.text.thin {
+/* line 24, ../sass/stylesheets/tuktuk.font.scss */
+.text .thin {
   font-weight: 200;
 }
-/* line 22, ../sass/stylesheets/tuktuk.font.scss */
-.text.book {
+/* line 25, ../sass/stylesheets/tuktuk.font.scss */
+.text .book {
   font-weight: 300;
 }
-/* line 23, ../sass/stylesheets/tuktuk.font.scss */
-.text.normal {
+/* line 26, ../sass/stylesheets/tuktuk.font.scss */
+.text .normal {
   font-weight: 400;
 }
-/* line 24, ../sass/stylesheets/tuktuk.font.scss */
-.text.bold {
+/* line 27, ../sass/stylesheets/tuktuk.font.scss */
+.text .bold {
   font-weight: 700;
 }
-/* line 25, ../sass/stylesheets/tuktuk.font.scss */
-.text.italic {
+/* line 28, ../sass/stylesheets/tuktuk.font.scss */
+.text .italic {
   font-style: italic;
 }
-/* line 26, ../sass/stylesheets/tuktuk.font.scss */
-.text.underline {
+/* line 29, ../sass/stylesheets/tuktuk.font.scss */
+.text .underline {
   border-bottom: 1px solid;
 }
-/* line 27, ../sass/stylesheets/tuktuk.font.scss */
-.text.uppercase {
+/* line 30, ../sass/stylesheets/tuktuk.font.scss */
+.text .uppercase {
   text-transform: uppercase;
 }
-/* line 28, ../sass/stylesheets/tuktuk.font.scss */
-.text.left {
+/* line 31, ../sass/stylesheets/tuktuk.font.scss */
+.text .left {
   text-align: left;
 }
-/* line 29, ../sass/stylesheets/tuktuk.font.scss */
-.text.right {
+/* line 32, ../sass/stylesheets/tuktuk.font.scss */
+.text .right {
   text-align: right;
 }
-/* line 30, ../sass/stylesheets/tuktuk.font.scss */
+/* line 33, ../sass/stylesheets/tuktuk.font.scss */
 .text.center {
   text-align: center;
 }
-/* line 31, ../sass/stylesheets/tuktuk.font.scss */
-.text.justify {
+/* line 34, ../sass/stylesheets/tuktuk.font.scss */
+.text .justify {
   text-align: justify;
 }
-/* line 32, ../sass/stylesheets/tuktuk.font.scss */
-.text.tiny {
+/* line 35, ../sass/stylesheets/tuktuk.font.scss */
+.text .tiny {
   font-size: 0.8em;
 }
-/* line 33, ../sass/stylesheets/tuktuk.font.scss */
-.text.small {
+/* line 36, ../sass/stylesheets/tuktuk.font.scss */
+.text .small {
   font-size: 0.9em;
 }
-/* line 34, ../sass/stylesheets/tuktuk.font.scss */
-.text.big {
+/* line 37, ../sass/stylesheets/tuktuk.font.scss */
+.text .big {
   font-size: 1.2em;
 }
 
 /* ========================= BASIC ELEMENTS ========================= */
-/* line 37, ../sass/stylesheets/tuktuk.font.scss */
+/* line 40, ../sass/stylesheets/tuktuk.font.scss */
 p {
   font-size: 1.1em;
   line-height: 1.1em;
 }
 
-/* line 41, ../sass/stylesheets/tuktuk.font.scss */
+/* line 43, ../sass/stylesheets/tuktuk.font.scss */
 small {
   font-size: 0.9em;
   line-height: 0.9em;
@@ -556,7 +556,7 @@ form label, .form label {
   width: 25%;
 }
 /* line 37, ../sass/stylesheets/tuktuk.form.scss */
-.fieldset > span, fieldset > span {
+.fieldset label > span, fieldset label > span {
   display: block;
   font-size: 0.8em;
   font-weight: 300;
@@ -1491,7 +1491,7 @@ table td.highlight {
   font-weight: 700;
 }
 
-/* line 2, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 3, ../sass/stylesheets/tuktuk.widget.scss */
 .scroll {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -1499,119 +1499,119 @@ table td.highlight {
   -webkit-box-flex: 1;
   /* BUG (iOS) POSITION: relative childrens */
 }
-/* line 8, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 9, ../sass/stylesheets/tuktuk.widget.scss */
 .scroll.horizontal {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
 }
-/* line 13, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 14, ../sass/stylesheets/tuktuk.widget.scss */
 .scroll > * {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
-/* line 15, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 16, ../sass/stylesheets/tuktuk.widget.scss */
 .clear {
   clear: both;
 }
 
-/* line 16, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 17, ../sass/stylesheets/tuktuk.widget.scss */
 .left {
   float: left;
 }
 
-/* line 17, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 18, ../sass/stylesheets/tuktuk.widget.scss */
 .right {
   float: right;
 }
 
-/* line 18, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 19, ../sass/stylesheets/tuktuk.widget.scss */
 .margin_none {
   margin: 0;
 }
 
-/* line 19, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 20, ../sass/stylesheets/tuktuk.widget.scss */
 .margin {
   margin: 20px;
 }
 
-/* line 20, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 21, ../sass/stylesheets/tuktuk.widget.scss */
 .margin_left {
   margin-left: 20px;
 }
 
-/* line 21, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 22, ../sass/stylesheets/tuktuk.widget.scss */
 .margin_right {
   margin-right: 20px;
 }
 
-/* line 22, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 23, ../sass/stylesheets/tuktuk.widget.scss */
 .margin_top {
   margin-top: 20px;
 }
 
-/* line 23, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 24, ../sass/stylesheets/tuktuk.widget.scss */
 .margin_bottom {
   margin-bottom: 20px;
 }
 
-/* line 24, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 25, ../sass/stylesheets/tuktuk.widget.scss */
 .padding_none {
   padding: 0;
 }
 
-/* line 25, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 26, ../sass/stylesheets/tuktuk.widget.scss */
 .padding {
   padding: 20px;
 }
 
-/* line 26, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 27, ../sass/stylesheets/tuktuk.widget.scss */
 .padding_left {
   padding-left: 20px;
 }
 
-/* line 27, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 28, ../sass/stylesheets/tuktuk.widget.scss */
 .padding_right {
   padding-right: 20px;
 }
 
-/* line 28, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 29, ../sass/stylesheets/tuktuk.widget.scss */
 .padding_top {
   padding-top: 20px;
 }
 
-/* line 29, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 30, ../sass/stylesheets/tuktuk.widget.scss */
 .padding_bottom {
   padding-bottom: 20px;
 }
 
-/* line 30, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 31, ../sass/stylesheets/tuktuk.widget.scss */
 .block {
   display: block;
 }
 
-/* line 31, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 32, ../sass/stylesheets/tuktuk.widget.scss */
 .inline {
   display: inline-block;
 }
 
-/* line 32, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 33, ../sass/stylesheets/tuktuk.widget.scss */
 .none {
   display: none;
 }
 
 /* ================== IMAGE & MEDIA ================== */
-/* line 34, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 35, ../sass/stylesheets/tuktuk.widget.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
-/* line 37, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 39, ../sass/stylesheets/tuktuk.widget.scss */
 img.responsive {
   width: 100%;
   height: auto;
 }
-/* line 40, ../sass/stylesheets/tuktuk.widget.scss */
+/* line 42, ../sass/stylesheets/tuktuk.widget.scss */
 img.responsive.rounded {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1620,8 +1620,8 @@ img.responsive.rounded {
   border-radius: 50%;
 }
 
-/* ================== TAGs ================== */
-/* line 42, ../sass/stylesheets/tuktuk.widget.scss */
+/* ================== TAGs =========================== */
+/* line 44, ../sass/stylesheets/tuktuk.widget.scss */
 .tag {
   position: relative;
   padding: 3px 4px;
